@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #333; /* Change navbar background color */
+  }
+  
+  .navbar-brand {
+    color: #fff; /* Change navbar brand text color */
+  }
+  
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    color: #fff; /* Change navbar brand text color on hover or focus */
+  }
+  
+  .navbar-nav li a {
+    color: #fff; /* Change navbar links text color */
+  }
+  
+  .navbar-nav li.active a,
+  .navbar-nav li a:hover,
+  .navbar-nav li a:focus {
+    color: #ffc107; /* Change navbar links text color when active, hover, or focus */
+  }
+  
+  /* Optional: Adjust padding and margin for better spacing */
+  .navbar-nav {
+    margin-right: 0;
+  }
+  
+  .navbar-nav > li {
+    margin: 0 10px;
+  }
+  

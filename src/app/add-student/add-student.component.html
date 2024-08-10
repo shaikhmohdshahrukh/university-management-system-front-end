@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New employee</title>
+
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #beafe0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: rgb(240, 197, 197);
+      padding: 100px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(46, 29, 29, 0.1);
+    }
+
+    .container h2 {
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+    .line{
+       border-bottom: 1px solid gray;
+       margin-bottom: 15px;
+
+       text-decoration: overline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+   
+    <h2 class="text-center">Add New Student</h2>
+    <div class="line"> </div>
+    
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name" [(ngModel)]="students.name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" [(ngModel)]="students.email">
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" name="address" id="address" placeholder="Enter Address" [(ngModel)]="students.address">
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Phone Number</label>
+        <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Enter Phone Number" [(ngModel)]="students.phoneNumber">
+      </div>
+
+      <div class="form-group">
+        <label for="birth">Birthday</label>
+        <input type="date" class="form-control" name="birth" id="birth" [(ngModel)]="students.birthday">
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" class="form-control" name="date" id="date" [(ngModel)]="students.date">
+      </div>
+      
+      <div class="form-group">
+        <label for="date">Gender</label>
+        <input type="text" class="form-control" name="gender" id="gender" placeholder="Enter Gender" [(ngModel)]="students.gender">
+      </div>
+     <button type="submit" class="btn btn-success btn-block">Submit</button>
+     <button style="text-align: center;" class="btn btn-success btn-block" type="button" routerLink="/home">Cancel</button> 
+    </form> 
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+  
+</body>
+</html>

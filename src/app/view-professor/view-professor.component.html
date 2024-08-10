@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professor Details</title>
+<style>
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container label b {
+    color: #333;
+}
+
+.container label b:before {
+    content: attr(data-label) ": ";
+    font-weight: bold;
+}
+
+.container label b {
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" routerLink="/dashboard" href="#">Home</a>
+              <a class="nav-link" routerLink="/students" href="#">Back</a>
+            </div>
+    </nav>
+
+    <section class="container">
+        <div>
+            <h2>View Professor Details</h2>
+            <!-- <label>ProfessorID : <b>{{ professors.professorId }}</b></label> -->
+            <label>Name : <b>{{ professors.name }}</b></label>
+            <label>Email : <b>{{ professors.email }}</b></label>
+            <label>Address : <b>{{ professors.address }}</b></label>
+            <label>Phone Number : <b>{{ professors.phoneNumber }}</b></label>
+            <label>Department : <b>{{ professors. department }}</b></label>
+            <label>Specialization : <b>{{ professors.specialization }}</b></label>
+            <label>Gender : <b>{{ professors.gender }}</b></label>
+            <!-- <label>UserID : <b>{{ professors.userId }}</b></label> -->
+            <!-- <label>Course Name : <b>{{ professors.course.courseName }}</b></label> -->
+        </div>
+    </section>
+
+</body>
+</html>

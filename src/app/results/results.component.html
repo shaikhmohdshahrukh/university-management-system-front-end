@@ -1,0 +1,51 @@
+
+<!-- admission.component.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" routerLink="/home">Back</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <a class="navbar-brand">Result Details</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                <th>EnrollmentNo</th>
+                <th>Name</th>
+                <th>CourseName</th>
+                <th>Department</th>
+                <th>Grade</th>
+                <th>Gender</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor ="let result of results">
+                <td>{{ result.enrollment.enrollmentNo}}</td>
+                <td>{{ result.student.name }}</td>
+                <td>{{ result.course.courseName }}</td>
+                <td>{{ result.department.departmentName }}</td>
+                <td>{{ result.grade.gradeName}}</td>
+                <td>{{ result.student.gender }}</td>
+                <td>
+                    <button (click)= "delete(result.resultId)" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

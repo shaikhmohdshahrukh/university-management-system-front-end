@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/home" href="/home">Back</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  routerLink="/addprofessors" href="/addprofessor">Add Professor</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+    <div>
+      <table class="table">
+        <thead>
+          <tr>
+            <!-- <th>ProfessorId</th> -->
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Department</th>
+            <th>Specialization</th>
+            <th>Gender</th>
+            <th>Action</th>
+            <th>Update</th>
+            <th>View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor= " let professor of professors">
+            <!-- <td>{{professor.professorId}}</td> -->
+            <td>{{ professor.name }}</td>
+            <td>{{ professor.email }}</td>
+            <td>{{ professor.address }}</td>
+            <td>{{ professor.phoneNumber }}</td>
+            <td>{{ professor.department }}</td>
+            <td>{{ professor.specialization }}</td>
+            <td>{{ professor.gender }}</td>
+            <!-- <td>{{professor.userId}}</td> -->
+            <td>
+              <button (click)= "delete(professor.professorId)" class="btn btn-danger">Delete</button>
+             </td>
+             <td>
+              <button (click)= "update(professor.professorId)" class="btn btn-success">Update</button>
+             </td>
+             <td>
+              <button (click)= "view(professor.professorId)" class="btn btn-success">View</button>
+             </td>
+          </tr> 
+        </tbody>
+      </table>
+    </div>
+  </body>
+  </html>

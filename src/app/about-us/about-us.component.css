@@ -1,0 +1,380 @@
+/* CSS Styles for Header */
+
+/* Header Top */
+.header-top {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+  }
+  
+  .header-top .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-top ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .header-top ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .header-top ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .header-top ul li i {
+    margin-right: 5px;
+  }
+  
+  /* Navigation */
+  .header-nav {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .header-nav .nav-img img {
+    max-width: 100%;
+  }
+  
+  .header-nav .nav-item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .header-nav .nav-item ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .header-nav .nav-item ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .header-nav .nav-item ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Small Menu Icon */
+  .small-menu {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  /* CSS Styles for Page Title and Navigation */
+
+/* Page Title */
+.page-nav {
+    background-color: #007bff; /* Change background color as needed */
+    color: #fff; /* Change text color as needed */
+    padding: 20px 0;
+  }
+  
+  .page-nav h2 {
+    margin-bottom: 10px;
+  }
+  
+  .page-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .page-nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .page-nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .page-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Navigation Icons */
+  .page-nav ul li a i {
+    margin-right: 5px;
+  }
+  
+  /* CSS Styles for Section with Medical Content */
+
+.with-medical {
+    padding: 50px 0; /* Adjust padding as needed */
+    background-color: #f8f9fa; /* Change background color as needed */
+  }
+  
+  .with-medical .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .with-medical .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .with-medical img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .with-medical .txtr {
+    max-width: 50%; /* Adjust text column width as needed */
+  }
+  
+  .with-medical h4 {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+    font-size: 24px; /* Adjust font size as needed */
+  }
+  
+  .with-medical p {
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height as needed */
+  }
+/* CSS Styles for University Number Section */
+
+.doctor-message {
+    background-color: #f8f9fa; /* Change background color as needed */
+    padding: 50px 0; /* Adjust padding as needed */
+  }
+  
+  .doctor-message .container {
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center container */
+  }
+  
+  .doctor-message .session-title {
+    text-align: center;
+    margin-bottom: 30px; /* Adjust margin as needed */
+  }
+  
+  .doctor-message .session-title h2 {
+    font-size: 24px; /* Adjust font size as needed */
+  }
+  
+  .doctor-message .session-title p {
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height as needed */
+  }
+  
+  .doctor-message .numb {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .doctor-message .numb h3 {
+    font-size: 36px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+  
+  .doctor-message .numb span {
+    font-size: 16px; /* Adjust font size as needed */
+  }
+    
+
+  /* CSS Styles for Our Instructors Section */
+
+.our-instructor {
+    background-color: #f8f9fa; /* Change background color as needed */
+    padding: 50px 0; /* Adjust padding as needed */
+  }
+  
+  .our-instructor .container {
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center container */
+  }
+  
+  .our-instructor .session-title {
+    text-align: center;
+    margin-bottom: 30px; /* Adjust margin as needed */
+  }
+  
+  .our-instructor .session-title h2 {
+    font-size: 24px; /* Adjust font size as needed */
+  }
+  
+  .our-instructor .instruct-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .our-instructor .col-md-3 {
+    flex-basis: calc(25% - 20px); /* Adjust column width as needed */
+    margin-bottom: 30px; /* Adjust margin as needed */
+  }
+  
+  .our-instructor .instruct-card {
+    background-color: #fff; /* Change card background color as needed */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add border radius for card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for card */
+  }
+  
+  .our-instructor .instruct-card img {
+    max-width: 100%; /* Ensure image doesn't exceed card width */
+    border-radius: 50%; /* Make image round */
+    margin-bottom: 15px; /* Adjust margin as needed */
+  }
+  
+  .our-instructor .instruct-card h6 {
+    margin-bottom: 5px; /* Adjust margin as needed */
+  }
+  
+  .our-instructor .instruct-card p {
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+  
+  .our-instructor .instruct-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .our-instructor .instruct-card ul li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  .our-instructor .instruct-card ul li:last-child {
+    margin-right: 0;
+  }
+
+  /* Footer container */
+footer {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+
+/* Footer columns */
+footer .container .row .col-md-3 {
+  margin-bottom: 30px;
+}
+
+/* Footer headings */
+footer h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Footer text */
+footer p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Footer address */
+footer .foot-address {
+  margin-bottom: 15px;
+}
+
+/* Footer icons */
+footer .icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Footer links */
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #333;
+}
+
+/* Footer tags */
+footer .tags ul {
+  padding-left: 0;
+}
+
+footer .tags ul li {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+/* Footer blog entries */
+footer .blohjb {
+  margin-bottom: 15px;
+}
+
+footer .blohjb p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+footer .blohjb span {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Footer copyright section */
+.copy {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.copy .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Copyright text */
+.copy a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Social media icons */
+.copy span a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* Hover effect on social media icons */
+.copy span a:hover {
+  color: #bbb;
+}

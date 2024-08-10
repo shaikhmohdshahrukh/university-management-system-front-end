@@ -1,0 +1,68 @@
+<html>
+<head>
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #beafe0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: rgb(240, 197, 197);
+      padding: 100px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(46, 29, 29, 0.1);
+    }
+
+    .container h2 {
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+    .line{
+       border-bottom: 1px solid gray;
+       margin-bottom: 15px;
+
+       text-decoration: overline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+   
+    <h2 class="text-center">Update Course</h2>
+    <div class="line"> </div>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="courseName">CourseName</label>
+        <input type="text" class="form-control" name="courseName" id="courseName" placeholder="Enter CourseName" [(ngModel)]="courses.courseName">
+      </div>
+      
+      <div class="form-group">
+        <label for="courseCode">CourseCode</label>
+        <input type="text" class="form-control" name="courseCode" id="courseCode" placeholder="Enter CourseCode" [(ngModel)]="courses.courseCode">
+      </div>
+
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" name="description" id="description" placeholder="Enter Description" [(ngModel)]="courses.description">
+      </div>
+      <button type="submit" class="btn btn-success btn-block">Submit</button>
+
+    </form> 
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+  
+</body>
+</html>
+

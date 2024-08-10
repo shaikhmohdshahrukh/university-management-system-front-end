@@ -1,0 +1,64 @@
+/* Style for navbar */
+.navbar {
+    background-color: #333; /* Change navbar background color */
+  }
+  
+  .navbar-brand {
+    color: #fff; /* Change navbar brand text color */
+  }
+  
+  .navbar-brand:hover,
+  .navbar-brand:focus {
+    color: #fff; /* Change navbar brand text color on hover or focus */
+  }
+  
+  .navbar-nav li a {
+    color: #fff; /* Change navbar links text color */
+  }
+  
+  .navbar-nav li.active a,
+  .navbar-nav li a:hover,
+  .navbar-nav li a:focus {
+    color: #ffc107; /* Change navbar links text color when active, hover, or focus */
+  }
+  
+  /* Optional: Adjust padding and margin for better spacing */
+  .navbar-nav {
+    margin-right: 0;
+  }
+  
+  .navbar-nav > li {
+    margin: 0 10px;
+  }
+  
+  /* Optional: Add border-bottom for active link */
+  .navbar-nav li.active {
+    border-bottom: 2px solid #ffc107; /* Change active link border color */
+  }
+     .container {
+      margin-top: 20px;
+    }
+    
+    .contact-section {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .contact-section h2 {
+      color: #333;
+    }
+    
+    .contact-section p {
+      margin-bottom: 10px;
+    }
+    
+    .contact-section a {
+      color: blue;
+      text-decoration: none;
+    }
+    
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+    

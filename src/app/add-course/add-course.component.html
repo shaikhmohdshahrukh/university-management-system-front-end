@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Course</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: #beafe0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: rgb(240, 197, 197);
+      padding: 30px; /* Changed padding for better visual balance */
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(46, 29, 29, 0.1);
+    }
+
+    .container h2 {
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+    
+    .line {
+      border-bottom: 1px solid gray;
+      margin-bottom: 15px;
+      text-decoration: overline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" ng-app="myApp" ng-controller="myCtrl">
+    <h2 class="text-center">Add New Course</h2>
+    <div class="line"></div>
+   
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="courseName">Course Name</label>
+        <input type="text" class="form-control" name="courseName" id="courseName" placeholder="Enter Course Name"  [(ngModel)]="courses.courseName">
+      </div>
+      
+      <div class="form-group">
+        <label for="courseCode">Course Code</label>
+        <input type="text" class="form-control" name="courseCode" id="courseCode" placeholder="Enter Course Code"  [(ngModel)]="courses.courseCode">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" name="description" id="description" placeholder="Enter Description"  [(ngModel)]="courses.description">
+      </div>
+      
+      <button type="submit" class="btn btn-success btn-block">Submit</button>
+      <button style="text-align: center;" class="btn btn-success btn-block" type="button" routerLink="/home">Cancel</button>
+    </form> 
+  </div>
+
+  <!-- AngularJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+</body>
+</html>

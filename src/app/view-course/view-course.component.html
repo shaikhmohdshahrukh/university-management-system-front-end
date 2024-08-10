@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Details</title>
+<style>
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container label b {
+    color: #333;
+}
+
+.container label b:before {
+    content: attr(data-label) ": ";
+    font-weight: bold;
+}
+
+.container label b {
+    display: inline-block;
+}
+
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" routerLink="/dashboard" href="#">Home</a>
+              <a class="nav-link" routerLink="/students" href="#">Back</a>
+            </div>
+    </nav>
+    <hr>
+
+    <section class="container">
+        <div>
+            <h2>View Course Details</h2>
+            <label>ID : <b>{{ courses.courseId }}</b></label>
+            <label>CourseName : <b>{{ courses.courseName  }}</b></label>
+            <label>CourseCode : <b>{{ courses.courseCode }}</b></label>
+            <label>Description : <b>{{ courses.description }}</b></label>
+        </div>
+    </section>
+
+</body>
+</html>

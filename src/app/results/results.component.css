@@ -1,0 +1,54 @@
+/* Style the navbar */
+.navbar {
+    background-color: #f8f8f8; /* Background color */
+    border: 1px solid #e7e7e7; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  /* Style the brand */
+  .navbar-brand {
+    color: #333; /* Text color */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Style the links */
+  .navbar-nav li a {
+    color: #333; /* Text color */
+  }
+  
+  /* Style the active link */
+  .navbar-nav li.active a {
+    color: #fff; /* Text color */
+    background-color: #337ab7; /* Background color */
+  }
+  
+  /* Style the dropdown menu */
+  .dropdown-menu {
+    background-color: #f8f8f8; /* Background color */
+    border: 1px solid #e7e7e7; /* Border color */
+  }
+  
+  /* Style the form */
+  .navbar-form {
+    margin-left: 10px; /* Adjust margin */
+  }
+  
+  /* Style the form input */
+  .navbar-form .form-control {
+    width: 200px; /* Set width */
+  }
+  
+  /* Style the submit button */
+  .navbar-form .btn-default {
+    background-color: #337ab7; /* Background color */
+    color: #fff; /* Text color */
+  }
+
+  
+  .table .table-bordered .table-striped th {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    }

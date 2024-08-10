@@ -1,0 +1,63 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/home" href="/home">Back</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  routerLink="/addstudents" href="/addstudents">Add Student</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name </th>
+            <th>Email </th>
+            <th>Adress </th>
+            <th>Phone Number </th>
+            <th>Birthday </th>
+            <th>Date </th>
+            <th>Gender </th>
+            <th>Action </th>
+            <th>Update </th>
+            <th>View </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor= "let student of students">
+            <td>{{ student.name }}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.address}}</td>
+            <td>{{ student.phoneNumber }}</td>
+            <td>{{ student.birthday }} </td>
+            <td>{{ student.date }}</td>
+            <td>{{student.gender}}</td>
+            <td>
+            <button (click)= "delete(student.studentId)" class="btn btn-danger">Delete</button>
+            </td>
+            <td>
+            <button (click)= "update(student.studentId)" class="btn btn-success">Update</button>
+            </td>
+            <td>
+            <button (click)= "view(student.studentId)" class="btn btn-success">View</button>
+           </td>
+          </tr> 
+        </tbody>
+      </table>
+    </div>
+
+  </body>
+  </html>
